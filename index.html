@@ -2,17 +2,1219 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111">
+
   <title>Mani Chandu</title>
   <meta name="Description"
-    content="Passionate Front End Developer with nearly three years of experience using HTML, CSS & JavaScript to build all aspects of the user interface for client facing web pages. Specializes in using TypeScript and Angular to build a single page application.">
+    content="Passionate Front End Developer with three years of experience using HTML, CSS & JavaScript to build all aspects of the user interface for client facing web pages. Specializes in using TypeScript and Angular to build a single page application.">
+  <link rel="shortcut icon" href="assets/images/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153193729-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-153193729-1');
+  </script>
 </head>
 
 <body>
-  <h1>Hey there! I'm Mani Chandu</h1>
-  <h2>Front-End Developer</h2>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-wrapper navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#home">Mani Chandu</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a id="homeLink" class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#articles">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <div class="d-none d-sm-block h-100">
+      <div class="home-wrapper">
+        <div class="container d-flex flex-column h-100">
+          <!-- Profile Picture -->
+          <div class="mt-auto">
+            <img src="assets/images/Mani-Chandu.jpg" class="profile-picture" alt="Mani Chandu Photo">
+          </div>
+          <!-- Introduction -->
+          <div class="pt-4">
+            <h2>Hey there! I'm Mani Chandu</h2>
+            <h4>Front-End Developer</h4>
+          </div>
+          <!-- Quotation -->
+          <blockquote class="blockquote pt-4">
+            <p>
+              <img src="assets/font-awesome/quote-left-solid.svg" alt="left-quote" class="left-quote">
+              Design is not just what it looks like and feels like. Design is how it works.
+              <img src="assets/font-awesome/quote-right-solid.svg" alt="right-quote" class="right-quote">
+            </p>
+          </blockquote>
+          <!-- Contact Information -->
+          <div class="mt-auto pb-2">
+            <div class="row personal-contact">
+              <div class="col-sm-3 text-left">
+                <h5><a href="tel:+919032996624"><span class="icon-box">
+                      <img src="assets/font-awesome/phone-alt-solid.svg" alt="phone" class="phone">
+                    </span>+91 9032996624</a></h5>
+              </div>
+              <div class="col-sm-6">
+                <h5><a href="mailto:manichandu.m@gmail.com" target="_top"><span class="icon-box">
+                      <img src="assets/font-awesome/envelope-solid.svg" alt="email" class="email">
+                    </span>manichandu.m@gmail.com</a></h5>
+              </div>
+              <div class="col-sm-3 text-right">
+                <a href="assets/pdf/Mani-Chandu-Medidhi-Resume.pdf" role="button"
+                  class="btn custom-primary-btn download-btn" download="Mani-Chandu-Medidhi-Resume">Download Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Visible only on xs	-->
+    <div class="d-block d-sm-none">
+      <div class="home-wrapper-xs">
+        <div class="d-flex flex-column h-100">
+          <div class="container-fluid">
+            <!-- Profile Picture -->
+            <div class="pt-4">
+              <img src="assets/images/Mani-Chandu.jpg" class="profile-picture-xs" alt="Mani Chandu Photo">
+            </div>
+            <!-- Introduction -->
+            <div class="pt-4">
+              <h2>Hey there!<br>I'm Mani Chandu</h2>
+              <h4>Front-End Developer</h4>
+            </div>
+            <!-- Quotation -->
+            <blockquote class="blockquote">
+              <p class="pt-4">
+                <!-- <img src="assets/font-awesome/quote-left-solid.svg" alt="left-quote" class="left-quote"> -->
+                <span class="mobile-quote">"</span>Design is not just what it looks like and feels like. Design is how
+                it works.<span class="mobile-quote">"</span>
+                <!-- <img src="assets/font-awesome/quote-right-solid.svg" alt="right-quote" class="right-quote"> -->
+              </p>
+            </blockquote>
+            <!-- Contact Information -->
+            <div class="row personal-contact pt-4 pb-4 ">
+              <div class="col-6 mb-4 text-right">
+                <h5><a href="tel:+919032996624" aria-label="Mobile"><span class="icon-box">
+                      <img src="assets/font-awesome/phone-alt-solid.svg" alt="phone" class="phone">
+                    </span></a></h5>
+              </div>
+              <div class="col-6 mb-4 text-left">
+                <h5><a href="mailto:manichandu.m@gmail.com" target="_top" aria-label="Email"><span class="icon-box">
+                      <img src="assets/font-awesome/envelope-solid.svg" alt="email" class="email">
+                    </span></a></h5>
+              </div>
+              <div class="col-12 mb-2 text-center">
+                <a href="assets/pdf/Mani-Chandu-Medidhi-Resume.pdf" role="button"
+                  class="btn custom-primary-btn download-btn" download="Mani-Chandu-Medidhi-Resume">Download Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile -->
+  <section class="profile" id="profile">
+    <div class="container profile-wrapper">
+      <!-- Profile -->
+      <div class="segment">
+        <h2 class="page-heading">PROFILE</h2>
+        <p class="text-justify">
+          I'm a passionate Front End Developer with three years of experience using HTML, CSS & JavaScript to build all
+          aspects of the user interface for client facing web pages. Specializes in using TypeScript and Angular to
+          build a single page application. Currently working for Tata Consultancy Services.
+        </p>
+      </div>
+      <!-- Design Process -->
+      <div class="segment">
+        <h3 class="page-subheading">The Design Process</h3>
+        <img class="img-fluid d-none d-md-block" alt="Design Process" src="assets/images/design_process.png" />
+        <img class="img-fluid d-block d-md-none" alt="Design Process" src="assets/images/design_process_vert.png" />
+      </div>
+      <!-- Skillsets -->
+      <div class="segment">
+        <h3 class="page-subheading">Skillsets</h3>
+        <h5 class="pb-2 mb-3 separator">Languages &amp; Frameworks</h5>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="pb-3">
+                <div class="pb-1">HTML</div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="max-width: 80%;" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-value">80%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">Markdown</div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="max-width: 85%;" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-value">85%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">CSS</div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="max-width: 75%;" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-value">75%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">SCSS</div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="max-width: 70%;" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-value">70%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 offset-md-2">
+              <div class="pb-3">
+                <div class="pb-1">Bootstrap</div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="max-width: 85%;" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-value">85%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">JavaScript</div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="max-width: 70%;" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-value">70%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">TypeScript</div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="max-width: 80%;" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-value">80%</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pb-3">
+                <div class="pb-1">Angular</div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="max-width: 70%;" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-value">70%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tools -->
+      <div class="segment">
+        <h5 class="pb-2 mb-3 separator">Tools</h5>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/visual-studio-code.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">VS Code</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/eclipse.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Eclipse</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/angular-cli.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Angular CLI</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid " src="assets/images/tools/augury.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Augury</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/webpack.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Webpack</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/npm.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">npm</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/insomnia.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Insomnia</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/github.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">GitHub</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/google-chrome.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Chrome</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid custom_height" src="assets/images/tools/photoshop.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Photoshop</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid custom_height" src="assets/images/tools/windows.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Windows</div>
+            </div>
+            <div class="col-4 col-sm-2 py-4">
+              <div class="rounded-wrapper">
+                <div class="rounded-img">
+                  <img class="img-fluid" src="assets/images/tools/ubuntu.svg" alt="icon">
+                </div>
+              </div>
+              <div class="pt-2">Ubuntu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Paradigms -->
+      <div class="segment">
+        <h5 class="pb-2 mb-3 separator">Paradigms</h5>
+        <p>
+          Agile Software Development, Test-Driven Development & Waterfall Model.
+        </p>
+      </div>
+      <!-- Employment -->
+      <div class="container-fluid segment">
+        <h3 class="page-subheading">Projects</h3>
+        <ul>
+          <li class="stepProgress-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p class="company-info">Financial Risk Manager Insight, <a href="https://www.53.com/">Fifth Third
+                      Bank</a> - Cincinnati, USA
+                  </p>
+                </div>
+                <div class="col-sm-3">
+                  <p class="sm-float-right-none company-duration">Dec.2017 - Present.</p>
+                </div>
+                <div class="col-sm-12">
+                  <p>FRM Insight is a business analytics application that lets to visualize customer's data and share
+                    insights across the organization. It connects to many data sources and brings the data preview on
+                    the dashboard with a rich interactive UI & visual charts.
+                  </p>
+                  <p class="font-weight-semi-bold">Achievements</p>
+                  <ul class="employment_highlights">
+                    <li>Optimized application for maximum speed and scalability, reduced page load time to less than 3
+                      seconds.
+                    </li>
+
+                    <li>Implemented Dependency Injection, Reactive Forms, Custom Pipes, Directive & Observables using
+                      Angular.</li>
+
+                    <li>Worked with backend engineers and QA to see projects through, from conception to completion.
+                    </li>
+
+                    <li>Attending the daily stand-up meeting with the onsite team to discuss project status and
+                      progress.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="stepProgress-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-9">
+                  <p class="company-info">iUse <a href="https://sites.tcs.com/bts/tcs-interactive/">TCS Interactive</a>
+                    - Bangalore, India
+                  </p>
+                </div>
+                <div class="col-sm-3">
+                  <p class="sm-float-right-none company-duration">Dec.2016 - Dec.2017.</p>
+                </div>
+                <div class="col-sm-12">
+                  <p>iUse is a platform to showcase rich UI Components of the web. Where users can search, preview and
+                    download. The developers can also contribute their assets. which helps to enhance the productivity
+                    of web application development.
+                  </p>
+                  <p class="font-weight-semi-bold">Achievements</p>
+                  <ul class="employment_highlights">
+                    <li>Spearheaded to redesign the company's existing UI component library platform, which increased
+                      usage by 40% in less than 6 months.</li>
+
+                    <li>Created a theme to make applications UI consistent and played a key role in the migration of
+                      applications to a common UI framework.</li>
+
+                    <li>Participated in the software development life-cycle including functional definition, user
+                      flows, interaction models.</li>
+
+                    <li>Developed functional custom directives, UI components.</li>
+
+                    <li>Designed wireframes and visual designs along with UX Designer.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="stepProgress-item last"></li>
+        </ul>
+      </div>
+      <!-- Education -->
+      <div class="container-fluid segment">
+        <h3 class="page-subheading">Education</h3>
+        <div class="container-fluid text-center ie-chart-fix">
+          <div class="row">
+            <div class="col-md-4">
+              <!-- Circular chart -->
+              <svg width="85%" viewbox="0 0 100 100">
+                <!-- Progress -->
+                <!-- 100% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7"
+                  stroke="#e0e0e0" stroke-dasharray="251.2" stroke-dashoffset="0" />
+                <!-- 76% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7"
+                  stroke="#00838f" stroke-dasharray="251.2" stroke-dashoffset="60" />
+                <!-- Center Text -->
+                <text x="40" y="55" fill="black" font-size="12">7.6</text>
+              </svg>
+              <br>Bachelor of Technology
+              <br>Information Technology
+              <br>2012 - 2016
+              <br>GITAM University
+            </div>
+            <div class="col-md-4">
+              <!-- Circular chart -->
+              <svg width="85%" viewbox="0 0 100 100">
+                <!-- Progress -->
+                <!-- 100% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7"
+                  stroke="#e0e0e0" stroke-dasharray="251.2" stroke-dashoffset="0" />
+                <!-- 69% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7"
+                  stroke="#00838f" stroke-dasharray="251.2" stroke-dashoffset="77" />
+                <!-- Center Text -->
+                <text x="40" y="55" fill="black" font-size="12">69%</text>
+              </svg>
+              <br>Intermediate
+              <br>Math, Physics & Chemistry
+              <br>2010 - 2012
+              <br>Narayana Junior College
+            </div>
+            <div class="col-md-4">
+              <!-- Circular chart -->
+              <svg width="85%" viewbox="0 0 100 100">
+                <!-- Progress -->
+                <!-- 100% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7"
+                  stroke="#e0e0e0" stroke-dasharray="251.2" stroke-dashoffset="0" />
+                <!-- 79% fill -->
+                <circle class="circularProgress" cx="50" cy="50" r="40" fill="transparent" stroke-width="7"
+                  stroke="#00838f" stroke-dasharray="251.2" stroke-dashoffset="52.5" />
+                <!-- Center Text -->
+                <text x="40" y="55" fill="black" font-size="12">79%</text>
+              </svg>
+              <br>SSC
+              <br>State Board
+              <br>2010
+              <br>SFS School
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- What am I doing  -->
+      <!-- TODO: Correct the below lines -->
+      <!--       <div class="pt-4 segment">
+        <h3 class="page-subheading">What am I doing when I'm not helping to create awesome deigns?</h3>
+        <p class="last-item">I'm interested to understand how the human brain works so I watch a lot of documentaries on
+          the NBA (Neuro-Cognitive Behavioral Approach). I'm a tech enthusiast, I spend most of my free time in knowing
+          tech history and product development. I listen to music almost all the time when I'm awake. I play badminton.
+        </p>
+      </div> -->
+    </div>
+    <div class="svg_divider">
+      <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+        <polygon points="-30,300 355.167,210.5 1432.5,290 1920,198.5 1920,300"></polygon>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio" id="portfolio">
+    <div class="container portfolio-wrapper">
+      <div class="segment">
+        <h2 class="page-heading">PORTFOLIO</h2>
+        <!-- Introduction of the page content -->
+        <p>I designed a few websites for businesses and individuals when I'm pursuing my Bachelor of Technology, To
+          implement few concepts what I have learned I designed this Portfolio, Recipe Book, Weather.</p>
+      </div>
+      <!-- tiles for the content as cards -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/portfolio/ManiChandu.png" alt="portfolio image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Portfolio</h5>
+                <div class="btn-group view-button" role="group" aria-label="View">
+                  <a href="#home" role="button" class="btn btn-split">View</a>
+                  <a href="https://github.com/ManiChanduM/ManiChanduM" rel="noopener" target="_blank" role="button"
+                    class="btn btn-split"><img src="./assets/images/tools/github.svg" alt="github" class="btn-git">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/portfolio/RecipeBook.png" alt="portfolio image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Recipe Book</h5>
+                <div class="btn-group view-button" role="group" aria-label="View">
+                  <a href="https://manichandum.github.io/Recipe-Book/" rel="noopener" target="_blank" role="button"
+                    class="btn btn-split">View</a>
+                  <a href="https://github.com/ManiChanduM/Recipe-Book" rel="noopener" target="_blank" role="button"
+                    class="btn btn-split">
+                    <img src="./assets/images/tools/github.svg" alt="github" class="btn-git">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/portfolio/Weather.png" alt="portfolio image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Weather</h5>
+                <div class="btn-group view-button" role="group" aria-label="View">
+                  <a href="https://manichandum.github.io/Weather/" rel="noopener" target="_blank" role="button"
+                    class="btn btn-split">View</a>
+                  <a href="https://github.com/ManiChanduM/Weather" rel="noopener" target="_blank" role="button"
+                    class="btn btn-split"><img src="./assets/images/tools/github.svg" alt="github" class="btn-git">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/portfolio/GSMK.png" alt="portfolio image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>GSMK & Associates</h5>
+                <div class="btn-group view-button" role="group" aria-label="View">
+                  <a href="https://gsmk.co.in/" rel="noopener" target="_blank" role="button"
+                    class="btn btn-split btn-min-width">View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/portfolio/ManiSarma.png" alt="portfolio image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Astrologer</h5>
+                <div class="btn-group view-button" role="group" aria-label="View">
+                  <a href="https://manisarma.com/" rel="noopener" target="_blank" role="button"
+                    class="btn btn-split btn-min-width">View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <img src="assets/images/portfolio/CoastalInternational.png" alt="portfolio image" class="portrait">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <h5>Coastal International</h5>
+                <div class="btn-group view-button" role="group" aria-label="View">
+                  <a href="https://coastalinternational.in/" rel="noopener" target="_blank" role="button"
+                    class="btn btn-split btn-min-width">View
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="svg_divider">
+      <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
+        <polygon points="-30,300 355.167,210.5 1432.5,290 1920,198.5 1920,300"></polygon>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section class="articles" id="articles">
+    <div class="container article-wrapper">
+      <div class="segment">
+        <h2 class="page-heading">ARTICLES</h2>
+        <p>Here are the bookmarks for the article/blog/guidelines/solutions on UI, UX and on
+          technologies which interests me, I keep on adding here, so that I can find all of them at one place.
+        </p>
+      </div>
+      <!-- Articles Container -->
+      <div class="container">
+        <div class="row">
+          <!-- Article Block -->
+          <div class="col-sm-6">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <!-- Card Heading -->
+                <div class="article-title">Front-End Development</div>
+                <img src="assets/images/articles/Front-End Development.jpg" alt="articles image">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <!-- Article Title -->
+                <h5 class="article-inset">What is Front-End Development?</h5>
+                <!-- Read More -->
+                <button type="button" class="btn custom-primary-btn read-button" data-toggle="modal"
+                  data-target="#firstArticle">Read more</button>
+              </div>
+              <!-- Article Modal -->
+              <div class="modal fade" id="firstArticle" tabindex="-1" role="dialog" aria-labelledby="firstArticle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">What is Front-End Development?</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <h4>Front-End Development</h4>
+                      <ul>
+                        <li>Front-end web development is the practice of producing HTML, CSS and JavaScript for a
+                          website or Web
+                          Application so that a user can see and interact with them directly.</li>
+                        <li>The objective of designing a site is to ensure that when the users open up the site they see
+                          the
+                          information in a format that is easy to read and relevant.</li>
+                        <li>The challenge associated with front-end development is users now use a large variety of
+                          devices with
+                          varying screen sizes and resolutions thus forcing the designer to take into consideration
+                          these aspects
+                          when designing the site. They need to ensure that their site comes up correctly in different
+                          browsers
+                          (cross-browser), different operating systems (cross-platform) and different devices
+                          (cross-device), which
+                          requires careful planning on the side of the developer.</li>
+                        <li>The tools and techniques used to create the front end of a website change constantly and so
+                          the
+                          developer needs to constantly be aware of how the field is developing.</li>
+                      </ul>
+
+                      <h4 class="pt-4">Technologies used for Front-End Development</h4>
+                      <p><strong>Hyper Text Markup Language (HTML):</strong>
+                        The standard markup language used to create web pages. A markup language is your way of making
+                        notes in a
+                        digital document that can be distinguished from regular text. It’s the most basic building block
+                        you’ll need
+                        for developing websites.</p>
+                      <p><strong>Cascading Style Sheets (CSS):</strong>
+                        The language used to present the document you create with HTML. Where HTML comes first and
+                        creates the
+                        foundation for your page, CSS comes along next and is used to create the page’s layout, color,
+                        fonts,
+                        and…well, the style!</p>
+                      <p><strong>JavaScript (JS):</strong> is an event-based imperative programming language (as opposed
+                        to HTML's
+                        declarative language model) that is used to transform a static HTML page into a dynamic
+                        interface.
+                        JavaScript code can use the Document Object Model (DOM), provided by the HTML standard, to
+                        manipulate a web
+                        page in response to events, like user input.</p>
+                      <p>Using a technique called AJAX, JavaScript code can also actively retrieve content from the web
+                        (independent
+                        of the original HTML page retrieval), and also react to server-side events as well, adding a
+                        truly dynamic
+                        nature to the web page experience.</p>
+
+                      <h4 class="pt-4">Goals for Front-End Development</h4>
+                      <p><strong>Accessibility:</strong> To ensure that site comes up correctly in browsers on all
+                        devices. Creating
+                        a responsive web design using stylesheets in CSS.</p>
+                      <p><strong>Performance:</strong> Performance goals are chiefly concerned with render time,
+                        manipulating the
+                        HTML, CSS, and JavaScript to ensure that the site opens up quickly.</p>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn custom-primary-btn close-btn" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article Block -->
+          <div class="col-sm-6">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <!-- Card Heading -->
+                <div class="article-title">Developer Tools</div>
+                <img src="assets/images/articles/Front-End-Development-Tools.jpg" alt="articles image">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <!-- Article Title -->
+                <h5 class="article-inset">What tools do the professionals use?</h5>
+                <!-- Read More -->
+                <button type="button" class="btn custom-primary-btn read-button" data-toggle="modal"
+                  data-target="#secondArticle">Read more</button>
+              </div>
+              <!-- Article Modal -->
+              <div class="modal fade" id="secondArticle" tabindex="-1" role="dialog" aria-labelledby="secondArticle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">What tools do the professionals use?</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <h4>Developer Tools</h4>
+                      <ul>
+                        <li><strong>Computer</strong> : Desktop running Windows, Mac, or Linux.</li>
+                        <li><strong>Code Editor</strong> : Visual Studio Code</li>
+                        <li><strong>Web Browser</strong> : Chrome</li>
+                        <li><strong>Graphic Editor</strong> : Adobe XD and Photoshop</li>
+                        <li><strong>Version Control System</strong> : Git</li>
+                        <li><strong>Automation system</strong> : Webpack</li>
+                        <li><strong>Frameworks</strong> : Bootstrap, Angular</li>
+                        <li><strong>Web Server</strong> : Python or NodeJS</li>
+                      </ul>
+
+                      <h4 class="pt-4">Reason for using the webserver for the local testing environment</h4>
+                      <ol>
+                        <li>
+                          <p>They feature asynchronous requests. Browsers will not run async requests if you just run
+                            the example
+                            from a local file. This is because of security restrictions.</p>
+                          <ul>
+                            <li>The trouble with this model is that whenever you want to update any part of the page,
+                              for example,
+                              to display a new set of products or load a new page, you've got to load the entire page
+                              again. This is
+                              extremely wasteful and results in a poor user experience, especially as pages get larger
+                              and more
+                              complex</li>
+                            <li>This led to the creation of technologies that allow web pages to request small chunks of
+                              data (such
+                              as HTML, XML, JSON, or plain text) and display them only when needed, helping to solve the
+                              problem
+                              described above.</li>
+                            <li>This is achieved by using APIs like XMLHttpRequest or — more recently — the Fetch API.
+                              These
+                              technologies allow web pages to directly handle making HTTP requests for specific
+                              resources available
+                              on a server and formatting the resulting data as needed before it is displayed.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p class="mt-4">They feature a server-side language. Server-side languages (such as PHP,
+                            Python, NodeJS)
+                            require a
+                            special server to interpret the code and deliver the results.</p>
+                        </li>
+                      </ol>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn custom-primary-btn close-btn" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article Block -->
+          <div class="col-sm-6">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <!-- Card Heading -->
+                <div class="article-title">Emmet</div>
+                <img src="assets/images/articles/Emmet.gif" alt="articles image">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <!-- Article Title -->
+                <h5 class="article-inset">The essential toolkit for web-developers</h5>
+                <!-- Read More -->
+                <button type="button" class="btn custom-primary-btn read-button" data-toggle="modal"
+                  data-target="#thirdArticle">Read more</button>
+              </div>
+              <!-- Article Modal -->
+              <div class="modal fade" id="thirdArticle" tabindex="-1" role="dialog" aria-labelledby="thirdArticle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Emmet - The essential toolkit for web-developers</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <div class="article-cover">
+                        <img src="./assets/images/articles/Emmet.gif" alt="articles image" class="articleImg">
+                        <div class="restrict-img"></div>
+                      </div>
+                      <h4>Improve your HTML & CSS workflow</h4>
+                      <p>Basically, most text editors out there allow you to store and re-use commonly used code chunks,
+                        called “snippets”. While snippets are a good way to boost your productivity, all implementations
+                        have common pitfalls: you have to define the snippet first and you can’t extend them in runtime.
+                      </p>
+                      <p>Emmet takes the snippets idea to a whole new level: you can type CSS-like expressions that can
+                        be dynamically parsed, and produce output depending on what you type in the abbreviation. Emmet
+                        is
+                        developed and optimised for web-developers whose workflow depends on HTML/XML and CSS, but can
+                        be
+                        used with programming languages too.
+                      </p>
+                      Source Link:
+                      <a href="https://docs.emmet.io/" target="_blank" rel="noopener">Emmet Documentation</a>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn custom-primary-btn close-btn" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Article Block -->
+          <div class="col-sm-6">
+            <div class="img-tiles-wrapper">
+              <div class="tiles-banner">
+                <!-- Card Heading -->
+                <div class="article-title">Visual Studio Code Extensions</div>
+                <img src="assets/images/articles/VS-Code-Extensions.png" alt="articles image">
+                <div class="restrict-img"></div>
+              </div>
+              <div class="tiles-desc">
+                <!-- Article Title -->
+                <h5 class="article-inset">My favorite VS Code Extensions</h5>
+                <!-- Read More -->
+                <button type="button" class="btn custom-primary-btn read-button" data-toggle="modal"
+                  data-target="#forthArticle">Read more</button>
+              </div>
+              <!-- Article Modal -->
+              <div class="modal fade" id="forthArticle" tabindex="-1" role="dialog" aria-labelledby="fourthArticle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                  <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">My favorite VS Code Extensions</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th class="border-top-0" scope="col">Extension Name</th>
+                            <th class="border-top-0" scope="col">Statistics</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>One Dark Pro</td>
+                            <td><a
+                                href="https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/zhuangtongfa.Material-theme.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Material Icon Theme</td>
+                            <td><a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/PKief.material-icon-theme.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Beautify css/sass/scss/less</td>
+                            <td><a
+                                href="https://marketplace.visualstudio.com/items?itemName=michelemelluso.code-beautifier"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/michelemelluso.code-beautifier.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Angular Language Service</td>
+                            <td><a href="https://marketplace.visualstudio.com/items?itemName=Angular.ng-template"
+                                target="_blank" rel="noopener">
+                                <img src="https://vsmarketplacebadge.apphb.com/downloads-short/Angular.ng-template.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Angular Snippets</td>
+                            <td><a href="https://marketplace.visualstudio.com/items?itemName=johnpapa.Angular2"
+                                target="_blank" rel="noopener">
+                                <img src="https://vsmarketplacebadge.apphb.com/downloads-short/johnpapa.Angular2.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Angular Console</td>
+                            <td><a href="https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console"
+                                target="_blank" rel="noopener">
+                                <img src="https://vsmarketplacebadge.apphb.com/downloads-short/nrwl.angular-console.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Debugger for Chrome</td>
+                            <td><a
+                                href="https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/msjsdiag.debugger-for-chrome.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>EditorConfig for VS Code</td>
+                            <td><a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/EditorConfig.EditorConfig.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>npm</td>
+                            <td><a href="https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/eg2.vscode-npm-script.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Markdown lint</td>
+                            <td><a
+                                href="https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/DavidAnson.vscode-markdownlint.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>TSLint</td>
+                            <td><a
+                                href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/ms-vscode.vscode-typescript-tslint-plugin.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Visual Studio IntelliCode</td>
+                            <td><a
+                                href="https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/VisualStudioExptTeam.vscodeintellicode.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                          <tr>
+                            <td>Code Spell Checker</td>
+                            <td><a
+                                href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker"
+                                target="_blank" rel="noopener">
+                                <img
+                                  src="https://vsmarketplacebadge.apphb.com/downloads-short/streetsidesoftware.code-spell-checker.svg"
+                                  alt="Downloads">
+                              </a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn custom-primary-btn close-btn" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="svg_divider_cloud"></div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="d-none d-sm-block h-100">
+      <div class="contact-wrapper">
+        <div class="container d-flex flex-column h-100">
+          <!-- Heading -->
+          <div class="pb-4 mt-auto">
+            <h2>I'd Love To Hear From You</h2>
+          </div>
+          <!-- Quotation -->
+          <div class="pt-2 pb-5">
+            <h3>Let's get in touch and begin something amazing</h3>
+            <blockquote class="blockquote">
+              <p class="pt-4">
+                <img src="assets/font-awesome/quote-left-solid.svg" alt="left-quote" class="left-quote">
+                If we want users to like our product, we should design it to behave like a likeable person: respectful,
+                generous and helpful.
+                <img src="assets/font-awesome/quote-right-solid.svg" alt="right-quote" class="right-quote">
+              </p>
+            </blockquote>
+          </div>
+          <!-- Personal Contact Info -->
+          <div class="container">
+            <div class="pt-5 row personal-contact">
+              <div class="col col-sm-6 text-left">
+                <h5><a href="tel:+919032996624">
+                    <span class="icon-box">
+                      <img src="assets/font-awesome/phone-alt-solid.svg" alt="phone" class="phone">
+                    </span>+91 9032996624
+                  </a></h5>
+              </div>
+              <div class="col col-sm-6 text-right">
+                <h5><a href="mailto:manichandu.m@gmail.com" target="_top">
+                    <span class="icon-box">
+                      <img src="assets/font-awesome/envelope-solid.svg" alt="email" class="email">
+                    </span>manichandu.m@gmail.com
+                  </a></h5>
+              </div>
+            </div>
+          </div>
+          <!-- Social Contact Info -->
+          <div class="row social-contact mt-auto pb-2 mb-5">
+            <div class="col-sm text-left">
+              <h5><a href="https://www.linkedin.com/in/ManiChandu/" target="_blank" rel="noopener">
+                  <img src="assets/font-awesome/linkedin-in-brands.svg" alt="linkedin"
+                    class="linkedin-icon">&nbsp;&#x2F;&nbsp;ManiChandu
+                </a></h5>
+            </div>
+            <div class="col-sm">
+              <h5><a href="https://github.com/ManiChanduM" target="_blank" rel="noopener">
+                  <img src="assets/font-awesome/github-brands.svg" alt="github"
+                    class="github-icon">&nbsp;&#x2F;&nbsp;ManiChanduM
+                </a></h5>
+            </div>
+            <div class="col-sm text-right">
+              <h5><a href="https://www.facebook.com/ManiChandu.M" target="_blank" rel="noopener">
+                  <img src="assets/font-awesome/facebook-f-brands.svg" alt="facebook"
+                    class="facebook-icon">&nbsp;&#x2F;&nbsp;ManiChandu.M
+                </a></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Visible only on xs	-->
+    <div class="d-block d-sm-none">
+      <div class="contact-wrapper-xs">
+        <div class="container-fluid d-flex flex-column h-100">
+          <!-- Heading -->
+          <div class="pt-5 mt-auto">
+            <h2>I'd Love To Hear From You</h2>
+          </div>
+          <!-- Quotation -->
+          <div class="pt-5">
+            <h3>Let's get in touch and begin something amazing</h3>
+            <blockquote class="blockquote">
+              <p class="pt-4">
+                <span class="mobile-quote">"</span>If we want users to like our product, we should design it to behave
+                like a likeable person: respectful, generous and helpful.<span class="mobile-quote">"</span>
+              </p>
+            </blockquote>
+          </div>
+          <!-- Personal Contact Info -->
+          <div>
+            <div class="pt-5 row personal-contact">
+              <div class="col-12 mb-3">
+                <h5><a href="tel:+919032996624" aria-label="Mobile">
+                    <span class="icon-box">
+                      <img src="assets/font-awesome/phone-alt-solid.svg" alt="phone" class="phone">
+                    </span>+91 9032996624
+                  </a></h5>
+              </div>
+              <div class="col-12">
+                <h5><a href="mailto:manichandu.m@gmail.com" target="_top" aria-label="Email">
+                    <span class="icon-box">
+                      <img src="assets/font-awesome/envelope-solid.svg" alt="email" class="email">
+                    </span>manichandu.m@gmail.com
+                  </a></h5>
+              </div>
+            </div>
+          </div>
+          <!-- Socail Contact Info -->
+          <div class="pt-5 pb-4 mb-2">
+            <div class="row social-contact">
+              <div class="col">
+                <a href="https://www.facebook.com/ManiChandu.M" target="_blank" rel="noopener" aria-label="Facebook">
+                  <img src="assets/font-awesome/facebook-f-brands.svg" alt="facebook" class="social-icons-xs">
+                </a>
+              </div>
+              <div class="col">
+                <a href="https://github.com/ManiChanduM" target="_blank" rel="noopener" aria-label="Git">
+                  <img src="assets/font-awesome/github-brands.svg" alt="github" class="social-icons-xs">
+                </a>
+              </div>
+              <div class="col">
+                <a href="https://www.linkedin.com/in/ManiChandu/" target="_blank" rel="noopener" aria-label="Linkedin">
+                  <img src="assets/font-awesome/linkedin-in-brands.svg" alt="linkedin" class="social-icons-xs">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- jQuery, Popper.js and Bootstrap JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Script JS -->
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
